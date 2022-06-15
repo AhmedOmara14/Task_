@@ -1,7 +1,5 @@
 package com.bosta.task.presentation.user_photos
 
-import android.util.Log
-import android.widget.Toast
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -25,10 +23,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import androidx.navigation.compose.composable
 import com.bosta.task.R
 import com.bosta.task.domain.model.photos.AllPhotosItem
-import com.bosta.task.presentation.ScreenNavigation
 import com.bosta.task.presentation.user_profile.component.PhotoListItem
 import java.util.*
 import kotlin.collections.ArrayList

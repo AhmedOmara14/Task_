@@ -1,6 +1,5 @@
 package com.bosta.task.presentation.user_photos
 
-import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.SavedStateHandle
@@ -22,17 +21,13 @@ class UserPhotosViewModel @Inject constructor(
     private val _state = mutableStateOf(UserPhotosState())
     val state: State<UserPhotosState> = _state
 
-    private val _searchTextState: MutableState<String> = mutableStateOf("")
-    val searchTextState: State<String> = _searchTextState
 
     init {
         savedStateHandle.get<String>(Constants.ALBUM_ID)?.let { albumId ->
             getPhotosById(albumId)
         }
     }
-    fun updateSearchTextState(newVal: String) {
-        _searchTextState.value = newVal
-    }
+
     private fun getPhotosById(albumId: String) {
 
         getAllPhotosUseCase(albumId).onEach { response ->
