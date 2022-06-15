@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Task</string>
+    <string name="profile">Profile</string>
+    <string name="my_albums">My Albums</string>
+    <string name="all_photos">All Photos</string>
+    <string name="icn_search_back_content_description">Search</string>
+</resources>
